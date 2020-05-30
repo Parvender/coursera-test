@@ -1,0 +1,12 @@
+form {
+	width: 60%;
+}
+input:focus {
+	background-color: #B3B3B3;
+}
+label {
+	display: block;
+}
+#nick{
+	display: none;
+}

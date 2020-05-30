@@ -1,0 +1,120 @@
+body {
+	font-size: 16px;
+  	color: #009933;
+  	background-color: #ccffdd;
+  	font-family: 'Oxygen', sans-sarif;
+
+}
+/** HEADER **/
+#header-nav {
+	background-color: #9900ff;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Testing NAME */
+	font-family: 'Lora', serif;
+	color: #ffffff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+ul > hr {
+	margin: 0px;
+}
+
+#nav-list {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #ff66cc;
+}
+
+#nav-list a {
+	color: #400c1f;
+	text-align: center;
+	font-weight: bold;
+	line-height: .50;
+}
+
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+#phone {
+	margin-top: 5px;
+}
+
+#phone a { /*Phone number */
+	text-align: right;
+	padding-bottom: 0;
+
+}
+
+#phone div { /* We Deliver */
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/*END HEADER */
+
+/* Main Content */
+
+.text-center {
+	font-family: 'Lora', serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+
+.maincol {
+	margin-top: 15px;
+  	background-color: #bbbbbb;
+	border: 2px solid black;
+	width: 100%;
+	margin-left:0%;
+	margin-right:0%;
+	color: black;
+  
+
+}
+
+div > h4 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+p {
+	
+  	margin-left: 2%;
+  	margin-right: 2%;
+  	text-align: justify;
+
+}
+

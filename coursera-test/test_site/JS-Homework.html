@@ -1,0 +1,73 @@
+<!-- JS Homework is week 4 homework of COURSERA course Interectivity with JS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interectivity with JS week 4 Homework</title>
+	<link rel="stylesheet" type="text/css" href="css/Interectivity-js-styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>JavaScript Homework</h1>
+		<p>Add the JavaScript code needed to enable auto-complete on this form.  Whenever the checkbox is checked, the code should automatically copy the values from Shipping Name and Shipping Zip into the Billing Name and Billing Zip.  If the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
+
+		<form>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippingName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<label for = "same">Is the Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Billing Information</legend>
+			<label for ="billingName">Name:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type = "submit" value = "Verify"/>
+		</form>
+		<form action="/test_site/index.html">
+			<fieldset>
+				<legend>Personal Information:</legend>
+				<label for='name'>Name</label>
+				<input type="text" id="name" name="name" value="Personal">
+				<br><br>
+				<label for="yesNick">Nickname?:<input type="checkbox" name="yesNick" id="yesNick" value="yes" onchange="nicknameFunction()"></label>
+				<div id="nick">
+					<label for="nickname">Nickname:</label>
+					<input type="text" name="nickname" id="nickname">
+				</div><br><br>
+				<label for="email1">Preferred Email address:<input type="email" id="email_addr" name="email1"required></label>
+				<br><br>
+				<label for="email2">Repeat email address: <input type="email" name="email2" id="email_repeat" required onchange="check();"></label>
+				<label for="password">Password: <input type="password" name="pass"></label>
+				<br><br>
+				Radio Buttons<br>
+				<label><input type="radio" name="sex" value="male" checked>Male</label><br>
+				<label><input type="radio" name="sex" value="female">Female</label><br><br>
+				Favorite Food<br>
+				<label><input type="radio" name="food" value="Pizza">Pizza</label><br>
+				<label><input type="radio" name="food" value="Chips"checked="true">Chips</label><br>
+				<label><input type="radio" name="food" value="Kale">Kale</label><br>
+				Checkboxes <br>
+				<label><input type="checkbox" name="contact1" value="Bike">Contact me via email</label><br>
+				<label><input type="checkbox" name="contact2" value="Bike">Contact me via phone</label><br><br>
+				<label for="numberInput">Number: <input type="number" name="numberInput" min="1000000000" max="9999999999" required></label><br><br>
+				Zip code with pattarn: <input type="text" name="zip_codeP" pattern="[0-9]{5}" required> <br><br>
+
+				<label for="birth">Birth: <input type="date" id="birth" name="birth"></label>
+				<br><br>
+				<input type="submit" value="Next" onclick="check()">
+				<input type="submit" value="Save" onclick="return false">
+			</fieldset>
+		</form>	
+	</div>
+	<script type="text/javascript" src="js/JS-Homework.js"></script>
+</body>
+</html>

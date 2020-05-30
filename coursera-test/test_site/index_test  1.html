@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+   
+   <title>Working on jscript</title>
+
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Oxygen:400,300,700" type="text/css">
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+  </head>
+ 
+  <body>
+    <br><br>
+    <div class="container">
+    <div id="toppanel" class="toptextpanel">
+      
+      Hover over an image
+    </div>
+	</div>
+	<br>
+
+    <div class="container">
+      
+      <img id = "img1" onmouseover="imagepanel(this);" onmouseleave="msg();" src="/test_site/img/menu/a/A-1.jpg" alt="APPLE TESTING">
+      
+      <img onmouseleave="msg();" onmouseover="imagepanel(this);"src="/test_site/img/menu/a/A-2.jpg" alt="VANILA TESTING">
+      
+      <img onmouseleave="msg();" onmouseover="imagepanel(this);" src="/test_site/img/menu/a/A-8.jpg" alt="PINEAPPLE TESTING">
+    
+    </div>
+
+
+
+
+    <div class="container">
+    <h1 id="title">Modify the DOM</h1>
+    <br>
+    <div>JavaScript can change the style of an HTML element</div>
+    <br>
+    <div>
+    <button class="button" onclick="opentext();">Open !</button>
+      
+      
+    <button class="button" onclick="closetext();">Close</button>
+     
+    </div> 
+
+    <div>
+    
+    
+    <p id="changebutton">
+      Extra details....You can open and close this paragraph using the buttons above.
+    </p>
+    
+
+    </div>
+
+    <form>
+    	<p>
+    		<label for="name">
+      			Say hello to 
+      		</label>
+      	<input type="text" id="name" name="name">
+      	<button onclick="sayHello();">Say it !</button>
+    	</p>
+
+    	<button onclick="displayDate();">Display date</button>
+    </form>
+    <div id="content"></div>
+    <div id="demo"></div>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html> 
